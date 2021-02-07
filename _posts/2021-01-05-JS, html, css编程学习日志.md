@@ -40,13 +40,14 @@ Programming Tool: [https://codepen.io/your-work](https://codepen.io/your-work)
 
 ul→unorder list 无序列表
 ol→order list 有序列表, 列表自动标号
- 
+
+<blockquote>
 ul <br>
 li      content1         /li <br>
 li      content2         /li <br>
 li      content3         /li <br>
 /ul
-
+</blockquote> 
 ---
 
 表格
