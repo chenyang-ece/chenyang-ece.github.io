@@ -1,11 +1,11 @@
 ---
 layout: page
-description: "一个即将回国的美食博主 | 一个即将失业的留学生"
+description: "Boilerplate of Hux Blog"
 ---
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-    <a target="_blank" href="{{ post.url | prepend: site.baseurl }}">
+    <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}
         </h2>
@@ -15,7 +15,7 @@ description: "一个即将回国的美食博主 | 一个即将失业的留学生
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:120 }}
+            {{ post.content | strip_html | truncate:200 }}
         </div>
     </a>
     <p class="post-meta">
