@@ -43,7 +43,7 @@ ol→order list 有序列表, 列表自动标号
 
 <blockquote>
 ul <br>
-li      content1         /li <br>
+<li>      content1         </li> <br>
 li      content2         /li <br>
 li      content3         /li <br>
 /ul
