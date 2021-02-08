@@ -11,6 +11,6 @@
 
 |        扫描添加微信 ↓        |       扫描收藏主页 ↓       |
 | :--------------------------: | :------------------------: |
-| <img src="img/QRwechat.jpg"> | <img src="img/QRblog.png"> |
+| <img src="/img/QRwechat.jpg"> | <img src="/img/QRblog.png"> |
 
 <br><br>
