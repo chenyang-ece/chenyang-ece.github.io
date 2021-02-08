@@ -7,10 +7,8 @@
 <p>于是我最近利用<a target="_blank" href="https://pages.github.com/">GitHub Pages</a>与<a href="http://jekyll.com.cn/">Jekyll</a> 搭建了个人博客，以后打算好好经营，用心记录。</p>
 <p>我会尽量写下在我身上发生的所有事，让所有人可以在这个博客里了解关于我的一切。</p>
 <p>目前我正在尝试申请PhD，我的方向是 <b>计算机视觉</b> 和 <b>图像处理技术</b>。<a href="files/中文简历.pdf">点击这里可以查看我的简历←</a></p>
-<br>
 
 |        扫描添加微信 ↓        |       扫描收藏主页 ↓       |
 | :--------------------------: | :------------------------: |
 | <img src="/img/QRwechat.jpg" width = "150"> | <img width = "150" src="/img/QRblog.png"> |
-
-<br><br>
+<br>

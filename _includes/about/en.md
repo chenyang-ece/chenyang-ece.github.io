@@ -9,10 +9,8 @@
 <p>Currently I am trying to apply for a PhD. <br>
     My research interests spans <b>Computer Vision</b> and <b>Image Processing</b>. <br>
     <a href="files/CV.pdf">Please click here to view  my CV ←</a></p>
-<br>
 
 |        WeChat ↓        |       Homepage ↓       |
 | :--------------------------: | :------------------------: |
 | <img src="/img/QRwechat.jpg" width = "150"> | <img width = "150" src="/img/QRblog.png"> |
-
-<br><br>
+<br>
