@@ -8,6 +8,7 @@ author:     Chen
 catalog: true
 tags:
     - Research
+    - CNN
 ---
 
 <h1>Neural Network Visualization</h1>
