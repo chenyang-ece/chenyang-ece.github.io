@@ -1,51 +1,117 @@
-
-# ---- 1、基本配置
-
-title: ChenのBlog # 你的博客名称，如：唐太宗的博客，以下配置如无特别说明，英文中文都OK
-SEOTitle: ChenのBlog | 杨晨的博客 # 这个是显示在浏览器Tab上的标题，如未指定该配置参数，系统会默认显示上面的title
-header-img: img/homepage.jpg # 这个定义了博客首页的顶部背景图，可以根据自己的喜好，设置不同的图
-#email: a4100yc@outlook.com # 你的邮箱，如：84787843@qq.com，右边头像栏底下显示
+# Site settings
+title: ChenのBlog
+SEOTitle: ChenのBlog | 杨晨的博客
+header-img: img/homepage.jpg
+#email: huxpro@gmail.com
 description: ""
-keyword:  ""
-url: "http://chenyang-ece.github.io" # 这里填我们GitHub账号的仓库（repo）名称，如：http://xxx.github.io
-baseurl: "" # 可忽略，官方解释：for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/chenyang-ece/chenyang-ece.github.io.git"
-# 你的GitHub仓库全名称（you code repository）,注意结尾要加上.git，如：https://github.com/zhangsan/zhangsan.github.io.git
+keyword: ""
+url: "https://chenyang-ece.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-# ---- 2、侧边栏配置（Sidebar settings）
+# Publish posts or collection documents with a future date.
+future: true
 
-sidebar: true # 是否使用侧边栏（头像，简介...），看个人喜好吧，我这里启用
-sidebar-about-description: 
-  <b>Chen Yang </b> <br>
+# SNS settings
+RSS: false
+#weibo_username:     huxpro
+zhihu_username:     yang-guo-qian-11
+github_username:    chenyang-ece
+twitter_username:   Chen25565903
+#facebook_username:  huxpro
+linkedin_username:  chen-yang-a4100yc
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+
+# Disqus settings
+# disqus_username: hux
+
+# Gitalk settings
+
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780
+
+# Google Analytics
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "
+<b>Chen Yang </b> <br>
   +1 (352) 745 5014 <br>
   a4100yc@outlook.com <br>
   Campus Lodge, Apt835,<br>
   2800 SW Williston Rd,<br>
-  Gainesville, Florida 32608   # 你的简介，如果上面设置false，这里可不填
-sidebar-avatar: /img/avatar.jpg # 你的头像图片的地址
-
-# ---- 3、社交账号配置（SNS settings）
-
-RSS: false  # 是否启用RSS订阅
-
-weibo_username:     17741072006      # 签名加了"#"号就表示，注释掉了，不设置微博账号
-zhihu_username:     yang-guo-qian-11      # 知乎，找到个人知乎主页，如：https://www.zhihu.com/people/zhangsan，这里的“zhangsan”就是你要填在这里的，下面的都类似
-github_username:    chenyang-ece      # GitHub
-# facebook_username:  meswx      # Facebook
-#jianshu_username:   f9133bd04508  # 简书，https://www.jianshu.com/u/f9133bd04508，简书链接前面固定部分已经代码中写好，你只需要把你的id填到这
-twitter_username:   Chen25565903    # Twitter
-linkedin_username: chen-yang-a4100yc
+  Gainesville, Florida 32608"
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
-# 个性标签（Featured Tags）
 
-featured-tags: true               # 是否使用首页标签
-featured-condition-size: 0        # 相同标签数量大于这个数，才会出现在首页右侧
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
 
-# 好友链接部分（Friends）
 
-friends : [
-    {
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: false
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+
+
+# Friends
+friends: [
+   {
         title: "University of Florida",              # 要显示的名称
         href: "http://www.ufl.edu/"   # 好友的博客链接
     },
@@ -61,66 +127,4 @@ friends : [
     title: "沈阳工程学院",              # 要显示的名称
     href: "http://www.sie.edu.cn/"    # 好友的博客链接
     },
-    # 可以无限加，注意数组语法，如果再加第3个，则需要在第2个的花括号“}“后面加上英文的逗号","
 ]
-
-# ---- 4、构建配置
-
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty   # 
-paginate: 6  # 每页展示多少篇博客文章
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"] # Jekyll框架系统配置，无需关注，不要动
-anchorjs: true  # if you want to customize anchor. check out line:181 of `post.html`
-
-# 以下配置，不需要动
-
-# Publish posts or collection documents with a future date.
-future: true
-
-# Gems # The 'gems' configuration option has been renamed to 'plugins'. Please update your config file accordingly.
-# from PR#40, to support local preview for Jekyll 3.0
-plugins: [jekyll-paginate]
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
-kramdown:
-  input: GFM   # use Github Flavored Markdown !important
-  # syntax_highlighter_opts:
-  #   span:
-  #     line_numbers: false
-  #   block:
-  #     line_numbers: true
-  #     start_line: 1
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-# MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
-
-# ---- 5、插件配置（不怕折腾的小白可以试试） 
-
-# 评论系统：Gitalk(https://github.com/gitalk/gitalk)
-gitalk:
-  enable: true #是否开启Gitalk评论
-  clientID: edc81432c5264df7a0b5 #生成的clientID
-  clientSecret: 5a229086faa9dd2da7cb7c7f9f07d93792faf7cc #生成的clientSecret
-  repo: chenyang-ece.github.io #仓库名称
-  owner: chenyang-ece #github用户名
-  admin: chenyang-ece
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
-
-# 统计，网站分析
-
-# Baidu Analytics
-ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780 # 自己去百度统计注册，把你注册的track_id填这里
-
-# Google Analytics
-ga_track_id: ' ' # 你用Google账号去注册一个就会给你一个这样的id，Format: UA-xxxxxx-xx
-ga_domain: auto     # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
-

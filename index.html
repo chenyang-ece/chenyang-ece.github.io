@@ -1,11 +1,11 @@
 ---
 layout: page
-description: "一个即将回国的美食博主 | 一个即将失业的留学生"
+description: "「离开世界之前 一切都是过程」"
 ---
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-    <a target="_blank" href="{{ post.url | prepend: site.baseurl }}">
+    <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}
         </h2>
@@ -15,7 +15,11 @@ description: "一个即将回国的美食博主 | 一个即将失业的留学生
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:120 }}
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
         </div>
     </a>
     <p class="post-meta">
