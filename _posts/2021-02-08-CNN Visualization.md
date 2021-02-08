@@ -13,10 +13,10 @@ tags:
 <h1>Neural Network Visualization</h1>
 
 
-<iframe src="https://player.vimeo.com/video/274236414" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<a align="center">Video Demonstration</a> <br>
 
-<p><a href="https://vimeo.com/274236414">Realtime Interactive Visualization of CNN in Unity</a> from <a href="https://vimeo.com/stefsietz">Stefan Sietzen || Visuality</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<iframe src="https://player.vimeo.com/video/274236414" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p align="center">Video Demonstration<br><a href="https://vimeo.com/274236414">Realtime Interactive Visualization of CNN in Unity</a> from <a href="https://vimeo.com/stefsietz">Stefan Sietzen || Visuality</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 
 
@@ -24,8 +24,12 @@ tags:
 
 This project was done for my master thesis. A general description can be taken from the thesis:
 
+
+
 ### Abstract
 Artificial neural networks is a popular field of research in artificial intelligence. The increasing size and complexity of huge models entail certain problems. The lack of transparency of the inner workings of a neural network makes it difficult to choose efficient architectures for different tasks. It proves to be challenging to solve these problems, and with a lack of insightful representations of neural networks, this state of affairs becomes entrenched. With these difficulties in mind a novel 3D visualization technique is introduced. Attributes for trained neural networks are estimated by utilizing established methods from the area of neural network optimization. Batch normalization is used with fine-tuning and feature extraction to estimate the importance of different parts of the neural network. A combination of the importance values with various methods like edge bundling, ray tracing, 3D impostor and a special transparency technique results in a 3D model representing a neural network. The validity of the extracted importance estimations is demonstrated and the potential of the developed visualization is explored.
+
+
 
 ## How to use
 
@@ -35,12 +39,18 @@ Artificial neural networks is a popular field of research in artificial intellig
 
 Multiple scripts are located in `examples`, which can be adapted to create and process neural networks. `examples/evaluation_plots.py` for example can be used to recreate the evaluation data and plots of my thesis.
 
+
+
 ## Rendering Tool
 The visualization tool `start_tool.py` can be used to render and/or process neural networks. Instead of existing ones, you can also generate random networks and process them of various sizes. For neural networks the visualization results in a more structured view of a neural network in regards to their trained parameters compared to the most common ones.
+
+
 
 ### Example
 <img align="center" src="/img/img for post/CNN Vis/docs/images/compare_network_parameters.jpg" />
 The parameters of the three neural networks represented above are all trained differently, while having the same architecture. The one on the left is not trained at all with randomly assigned values. The nodes and edges of this model spread further from the center. The middle one is trained with some basic settings for learning rate and achieving >90% accuracy. The third one on the right is trained in the same way but with an additional *L1* regularization, with similar accuracy rating and is the most narrow model. **The closer together the edges are the greater the generalization** of these parts of the neural network.
+
+
 
 ### Controls
 |Key|Description|
@@ -49,9 +59,14 @@ The parameters of the three neural networks represented above are all trained di
 |K|Screenshot|
 |0-9|Switch camera position|
 
+
+
 ### GUI
+
 The settings for shaders, statistics and the processing of neural networks in general is controllable by the gui.
 <img align="center" src="/img/img for post/CNN Vis/docs/images/gui_nnvis.jpg" />
+
+
 
 ### Shader Parameters
 The parameters used in the shaders rendering the neural network can be changed by either the `configs/rendering.json` or by changing the values in the gui. The visualization can differ vastly and different results can be seen [here](#other-visualizations).
@@ -66,7 +81,9 @@ The parameters used in the shaders rendering the neural network can be changed b
 |Importance Threshold|0.1|0.0 - 1.0|defines the threshold at which an object is rendered based on its importance value|
 
 
+
 ## Processing
+
 <img align="center" src="/img/img for post/CNN Vis/docs/images/own_pipeline.png" />
 The above pipeline explains the bundling process of a neural network through my code. 
 
@@ -74,7 +91,10 @@ The above pipeline explains the bundling process of a neural network through my 
 <img align="center" src="/img/img for post/CNN Vis/docs/images/comparisson_processing.jpg" />
 This image shows the different stages in the processing pipeline.
 
+
+
 ### Parameters
+
 The processing can be influenced by the following parameters. The default values are in general derived from empircally tested values of related work regarding edge bundling methods. Some values have a high impact on the processing time.
 
 |Name|Recommended|Range|Description|Performance Impact|
@@ -105,7 +125,10 @@ To change the parameters for processing change values in following file:
 }
 ```
 
+
+
 ### Importance
+
 Each classification is represented by one color. Nodes and egdes are colored according to their importance in the network for correctly predicting the associated class. The validity of the importance is proven by pruning the model parameters in order of their calculated importance.
 
 Overall Importance Pruning             |  Class Importance Pruning
@@ -116,16 +139,24 @@ The left plot shows that pruning unimportant parameters does not influence the p
 
 Also by pruning based on importance of specific classes shows the accuracy is preserved for the exact classes in the right plot. The accuracy for the focused class is always higher compared to the overall accuracy.
 
+
+
 ## Used System
 
 * Windows 10
 * NVIDIA GeForce GTX 1660 SUPER
 * AMD Ryzen 7 3700X
 
+
+
 ### Notes
+
 * **Processing Times** - Pocessing of a fully connected neural network with following nodes per layer: 784, 81, 49, 10 takes 12 minutes. So the one-time calculations are not in real-time.
 
+
+
 ## Other Visualizations
+
 <img align="center" src="/img/img for post/CNN Vis/docs/images/colored_lines.jpg" />
 <img align="center" src="/img/img for post/CNN Vis/docs/images/spheres.jpg" />
 <img align="center" src="/img/img for post/CNN Vis/docs/images/transparent_spheres.jpg" />
