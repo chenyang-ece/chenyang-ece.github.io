@@ -42,7 +42,7 @@ ol→order list 有序列表, 列表自动标号
 
 
 
-```asd <ul>
+```<ul>
 <ul>
 <li> content1 </li> 
 <li> content2 </li>
@@ -50,13 +50,12 @@ ol→order list 有序列表, 列表自动标号
 </ul>
 ```
 
-<blockquote>
 <ul>
 <li>  content1 </li> 
 <li>content2</li>               
 <li> content3</li>               
     </ul>
-</blockquote> 
+ 
 
 ---
 
