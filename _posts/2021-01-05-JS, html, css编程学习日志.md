@@ -13,9 +13,9 @@ tags:
 
 ### HTML
 
-Course Resources: [https://www.dukelearntoprogram.com/](https://www.dukelearntoprogram.com/) 
+Course Resources: [https://www.dukelearntoprogram.com/](https://www.dukelearntoprogram.com/)   
 
-Programming Tool: [https://codepen.io/your-work](https://codepen.io/your-work)
+Programming Tool: [https://codepen.io/your-work](https://codepen.io/your-work)  
 
 有别的不会的查这个: [https://www.w3school.com.cn/h.asp](https://www.w3school.com.cn/h.asp)
 
@@ -23,7 +23,7 @@ Programming Tool: [https://codepen.io/your-work](https://codepen.io/your-work)
 
 <b>注意: 编写特殊符号, &lt ; 代表<,  &gt ;代表>  </b>
 
-&lt;b&gt; &lt;/b&gt; bold text 大写  
+&lt;b&gt; &lt;/b&gt; bold text 大写
 
 &lt;p&gt; &lt;/p&lt; paragraph 段落
 
@@ -37,10 +37,8 @@ Programming Tool: [https://codepen.io/your-work](https://codepen.io/your-work)
 
 ---
 
-ul→unorder list 无序列表
-ol→order list 有序列表, 列表自动标号
-
-
+ul→unorder list 无序列表  
+ol→order list 有序列表, 列表自动标号  
 
 ```html
 <ul>
@@ -79,8 +77,6 @@ ol→order list 有序列表, 列表自动标号
 </table>   
 ```
 
-
-
 <table> 
 <tr>      
 <th> header1 </th>   
@@ -94,6 +90,16 @@ ol→order list 有序列表, 列表自动标号
 </tr>                    
 </table>        
 ---
+
+
+
+
+
+
+
+
+
+
 ### CSS
 
 #### Syntax , Style and ID
@@ -102,23 +108,18 @@ ol→order list 有序列表, 列表自动标号
 .h1{ 
       text-align: center;
       color : blue;
-<br>
 }
 ```
-
-
 
 上面这个例子会把html中所有h1标题全都居中变蓝，如果想通过CSS修改一类标题或者格式，需要先对class进行声明，比如： 
 
 ```html
-<li class = "foodLi"> Food List </li> 
+<li class = "foodLi"> Food List </li>                     Note：声明的class名字不能有括号空格
 ```
 
 ```css
 .foodLi { color : green}
 ```
-
-Note：声明的class名字不能有括号空格
 
 如果想通过CSS修改某个标题或者格式，需要使用CSS id，比如：
 
@@ -127,10 +128,8 @@ Note：声明的class名字不能有括号空格
 ```
 
 ```css
-#cakeimg {float: right}
+#cakeimg {float: right}                                    Note：id 选择器以#开头
 ```
-
-Note：id 选择器以#开头
 
 ---
 
@@ -140,13 +139,9 @@ Note：id 选择器以#开头
 
 选择完颜色之后直接使用颜色代码调整文本颜色： 
 
-
-
 ```css
-.foodLi {color: #3f3fbf}    %%% 此处对应rbg(63, 63, 191)
+.foodLi {color: #3f3fbf}                                   %%% 此处对应rbg(63, 63, 191)
 ```
-
-
 
 ---
 
