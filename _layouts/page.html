@@ -52,7 +52,7 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>Related Sites</h5>
+                <h5>FRIENDS</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
                         <li><a target="_blank" href="{{friend.href}}">{{friend.title}}</a></li>
@@ -172,16 +172,6 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
-                            {% if site.github_username %}
-                            <li>
-                                <a target="_blank" href="https://www.github.com/{{ site.github_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
                         </ul>
                         {% if site.email %}
                             <p>✍️📨 {{site.email}}</p>
@@ -191,14 +181,13 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>RELATED SITES</h5>
+                <h5>FRIENDS</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
                         <li><a target="_blank" href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
-               <hr>
     		</div>
         {% endif %}
 	</div>
