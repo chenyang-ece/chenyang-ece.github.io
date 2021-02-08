@@ -42,7 +42,7 @@ ol→order list 有序列表, 列表自动标号
 
 
 
-```<ul>
+```html
 <ul>
 <li> content1 </li> 
 <li> content2 </li>
@@ -61,17 +61,21 @@ ol→order list 有序列表, 列表自动标号
 
 表格 table  
 
-```js
-<tr>                
-<th> header1 </th>   
+```html
+<table>
+
+<tr>     
+<th> header1 </th> 
 <th> header2 </th>  
-<th> header3 </th>   
+<th> header3 </th>  
 </tr>          
-<tr>           
-<td>  data1 </td>        
+
+<tr>      
+<td> data1 </td>        
 <td> data2 </td>         
 <td> data3 </td>             
-</tr>                    
+</tr> 
+
 </table>   
 ```
 
@@ -94,8 +98,8 @@ ol→order list 有序列表, 列表自动标号
 
 #### Syntax , Style and ID
 
-```js
-``.h1{ 
+```css
+.h1{ 
       text-align: center;
       color : blue;
 <br>
@@ -106,21 +110,25 @@ ol→order list 有序列表, 列表自动标号
 
 上面这个例子会把html中所有h1标题全都居中变蓝，如果想通过CSS修改一类标题或者格式，需要先对class进行声明，比如： 
 
-- ```js
-  <li class = "foodLi"> Food List </li> 		
-  ```
+```html
+<li class = "foodLi"> Food List </li> 
+```
 
-- ```js
-  .foodLi { color : green}
-  ```
+```css
+.foodLi { color : green}
+```
 
 Note：声明的class名字不能有括号空格
 
-如果想通过CSS修改某个标题或者格式，需要使用CSS id，比如：<br><img src = "cake.jpg" id = "cakeimg" />    
+如果想通过CSS修改某个标题或者格式，需要使用CSS id，比如：
 
-```<img src = "cake.jpg" id = "cakeimg" />```
+```html
+<img src = "cake.jpg" id = "cakeimg" />
+```
 
-```#cakeimg {float: right}```
+```css
+#cakeimg {float: right}
+```
 
 Note：id 选择器以#开头
 
@@ -132,7 +140,13 @@ Note：id 选择器以#开头
 
 选择完颜色之后直接使用颜色代码调整文本颜色： 
 
-```.foodLi {color: #3f3fbf}    %%% 此处对应rbg(63, 63, 191)```
+
+
+```css
+.foodLi {color: #3f3fbf}    %%% 此处对应rbg(63, 63, 191)
+```
+
+
 
 ---
 
