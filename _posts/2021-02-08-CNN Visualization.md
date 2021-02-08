@@ -10,6 +10,7 @@ tags:
 ---
 
 <h1>Neural Network Visualization</h1>
+<h4>该项目来自[Stefan Sietzen](https://github.com/julrog/nn_vis)</h4>
 <p align="center">
 <img align="center" src="/img/img for post/CNN Vis/docs/images/all_red_blue.gif" />
 </p>
