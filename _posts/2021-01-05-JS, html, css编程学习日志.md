@@ -40,10 +40,12 @@ Programming Tool: [https://codepen.io/your-work](https://codepen.io/your-work)
 ul→unorder list 无序列表
 ol→order list 有序列表, 列表自动标号
 
+
+
 ```asd <ul>
 <ul>
 <li> content1 </li> 
-<li> content2 </li>               
+<li> content2 </li>
 <li> content3 </li>               
 </ul>
 ```
@@ -94,7 +96,7 @@ ol→order list 有序列表, 列表自动标号
 #### Syntax , Style and ID
 
 ```js
-.h1{ 
+``.h1{ 
       text-align: center;
       color : blue;
 <br>
@@ -106,7 +108,7 @@ ol→order list 有序列表, 列表自动标号
 上面这个例子会把html中所有h1标题全都居中变蓝，如果想通过CSS修改一类标题或者格式，需要先对class进行声明，比如： 
 
 - ```js
-  <li class = "foodLi"> Food List </li>
+  <li class = "foodLi"> Food List </li> 		
   ```
 
 - ```js
@@ -115,15 +117,11 @@ ol→order list 有序列表, 列表自动标号
 
 Note：声明的class名字不能有括号空格
 
-如果想通过CSS修改某个标题或者格式，需要使用CSS id，比如：<br>
+如果想通过CSS修改某个标题或者格式，需要使用CSS id，比如：<br><img src = "cake.jpg" id = "cakeimg" />    
 
-- ```js
-  <img src = "cake.jpg" id = "cakeimg" />
-  ```
+```<img src = "cake.jpg" id = "cakeimg" />```
 
-- ```js
-  #cakeimg {float: right}
-  ```
+```#cakeimg {float: right}```
 
 Note：id 选择器以#开头
 
@@ -135,9 +133,7 @@ Note：id 选择器以#开头
 
 选择完颜色之后直接使用颜色代码调整文本颜色： 
 
-- ```js
-  .foodLi {color: #3f3fbf}    ###此处对应rbg(63, 63, 191)
-  ```
+```.foodLi {color: #3f3fbf}    %%% 此处对应rbg(63, 63, 191)```
 
 ---
 
