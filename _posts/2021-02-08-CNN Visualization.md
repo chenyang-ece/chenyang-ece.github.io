@@ -9,7 +9,7 @@ tags:
     - Research
 ---
 
-<h1 align="center">Neural Network Visualization</h1>
+<h1>Neural Network Visualization</h1>
 <p align="center">
 <img align="center" src="/img/img for post/CNN Vis/docs/images/all_red_blue.gif" />
 </p>
@@ -18,7 +18,17 @@ Visualization of neural network architectures and parameters.
 </p>
 
 
+
+<h1>
+Demonstration of the Visualization Process</h1>
+
+<iframe src="https://player.vimeo.com/video/274236414" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/274236414">Realtime Interactive Visualization of CNN in Unity</a> from <a href="https://vimeo.com/stefsietz">Stefan Sietzen || Visuality</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+
 ## Description
+
 This project was done for my master thesis. A general description can be taken from the thesis:
 
 ### Abstract
