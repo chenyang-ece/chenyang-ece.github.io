@@ -9,13 +9,14 @@ tags:
     - Research
 ---
 
-<h1 align="center">Neural Network Visualization</h2>
+<h1 align="center">Neural Network Visualization</h1>
 <p align="center">
 <img align="center" src="/img/img for post/CNN Vis/docs/images/all_red_blue.gif" />
 </p>
 <p align="center">
 Visualization of neural network architectures and parameters.
 </p>
+
 
 ## Description
 This project was done for my master thesis. A general description can be taken from the thesis:
