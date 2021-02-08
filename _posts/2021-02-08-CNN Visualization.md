@@ -3,7 +3,7 @@ layout:     post
 title:      CNN Visualization
 subtitle:   卷积神经网络可视化基于Unity
 date:       2021-02-08
-header-style: text
+header-img: img/black.jpg
 author:     Chen
 catalog: true
 tags:
