@@ -11,7 +11,7 @@ tags:
     - CNN
     - Face Recognition
 ---
-# Face Recognition based on Convolutional Neural Networks
+## Face Recognition based on Convolutional Neural Networks
 <b>
 Chen Yang <br>
 Department of Electrical & Computer Engineering <br>
@@ -19,13 +19,13 @@ Hebert Wertheim College of Engineering <br>
 University of Florida <br>
 cyang3@ufl.edu </b><br>
 
-## Abstract 
+### Abstract 
 
 Face recognition plays a vital role in the real-world applications, such as video surveillance, human-computer interaction, and security systems. Compared with traditional machine learning methods, the recently emerging implementations based on deep learning technology have better performance in terms of recognition speed and accuracy. This paper will implement and analyze an online face recognition system based on enhanced version of LeNet model. The main contents are basic introduction of face recognition technology, specific architecture of the CNN model, and the analysis of the system output.  <br>
 Keywords —— Face recognition; Deep learning, LeNet, Convolutional neural networks (CNN) <br><br>
 
 
-## Ⅰ.Introduction 
+### Ⅰ.Introduction 
 
 As one of the biometric identification technology, face recognition has many unique advantages, such as low cost, non-contact, and stable verification speed, etc. In recent years, as a new research direction of machine learning technology, deep learning has made remarkable achievements in the field of image processing and computer vision applications. Among various deep learning networks, convolutional neural networks have shown extraordinary image processing capabilities because of its special structure of local weight sharing. Therefore, CNN is an extremely powerful tool to process image. In addition to face recognition, CNN has a wider range of applications, such as image classification and retrieval, target positioning and segmentation, etc. 
 
@@ -33,7 +33,7 @@ The main contribution of this paper is to obtain a recognition algorithm with hi
 
 The rest parts of this paper is organized as follows. In section 2, the basic CNN structure and working characteristics will be introduced. In the section 3, the comprehensive implementation process of the proposed algorithm will be discussed. In section 4 and 5, the experimental results and some summarization based on the output will be given.
 
-## Ⅱ. Methodology
+### Ⅱ. Methodology
 
 A typical convolutional neural network usually consists of the following layers: input layer, convolutional layer, Relu layer, pooling layer and fully connected layer. By overlaying these layers, a complete convolutional neural network is successfully constructed. However, in actual implementations, computer programmers often combine the convolutional layer and the ReLU layer as a convolutional layer, so the convolutional layer also needs to go through an activation function after a convolution operation. Convolutional layers and pooling layers generally appear alternately in neural network models. In other words, a pair of convolutional layer and pooling layer can be regarded as a process of feature extraction, however, not every appearance of convolutional layer is accompanied by a pooling layer. Most networks only contain three pooling layers, and end up with one or two fully connected layers.
 
@@ -51,11 +51,11 @@ The pooling layer is responsible for dimensionality reduction of the data. There
 
 The fully connected layer is responsible for receiving the data processed by the convolutional layer and the pooling layer, and then connected all the neurons with features activated in the network, finally classify and output the result.
 
-## Ⅲ. Experimental Design
+### Ⅲ. Experimental Design
 
 This design successfully runs on win10, the compiler is Pycharm, the main framework of neural network is implemented by tensorflow, and the python version is 3.5. The version information of other libraries called will be listed below. The entire online recognition system can be divided into four parts, of which the first three parts will be explained in detail in this chapter.
 
-### 3.1 Image Prepossessing
+#### 3.1 Image Prepossessing
 
 The final task of the project is to output a successful classification network, so in this part, two kind of face data sets are required, {other_faces} and {my_faces}.
 
@@ -67,7 +67,7 @@ The final task of the project is to output a successful classification network, 
 
 <img src="/img/img for post/FaceRecognition/4.png">
 
-### 3.2 Analysis of Internal Structure of Neural Network
+#### 3.2 Analysis of Internal Structure of Neural Network
 
 The size of the picture obtained after preprocessing is 64×64×3. Next, pass the processed pictures into the eight-layer neural network designed for this experiment. This design builds an 8-layer neural network. The detailed structure analysis and image processing process are as follows.
 
@@ -88,7 +88,7 @@ The eighth layer is also a fully connected layer, which is used to classify the 
 <img src="/img/img for post/FaceRecognition/7.png">
 <img src="/img/img for post/FaceRecognition/8.png">
 
-### 3.3 CNN Training
+#### 3.3 CNN Training
 
 After image processing and model construction, CNN training can officially begin. According to the instruction of the lfw database website, training set and validation set are recommended to be generated by splitting the data set randomly. Therefore, we first merge the two data sets({my_faces} and {other_faces}), and then randomly divide the training set and the validation set at a ratio of 20:1. The loss function chosen in this project is cross entropy, the optimizer is Adam. 
 
@@ -96,17 +96,17 @@ In this section, the batch size is chosen to be 100 and the learning rate = 0.01
 
 <img src="/img/img for post/FaceRecognition/9.png">
 
-## Ⅳ. Evaluation 
+### Ⅳ. Evaluation 
 
 <img src="/img/img for post/FaceRecognition/10.png">
 <img src="/img/img for post/FaceRecognition/11.png">
 <img src="/img/img for post/FaceRecognition/12.png">
 
-## Ⅴ. Conclusion
+### Ⅴ. Conclusion
 
 This design mainly studies the online face recognition system based on the improved LeNet model. In addition, it also implements video face collection and intelligent image processing. From the performance point of view, the model function has reached the expected standard, (In an average of 5 epochs, the test accuracy reached 0.97) but this system still has room for improvement. Due to the limitation of hardware conditions, the CPU of this computer cannot complete the training of deeper networks. If a larger data set is supplemented by a deeper network model, the recognition accuracy and fitting speed of this face recognition system will be greatly improved. After that, I will continue to look up the information and try to find out the relationship between the depth of the model and the sample size of the corresponding data set, so that we can build a network model of appropriate depth according to the size of the data set to achieve the best results.
 
-## References
+### References
 
 [1] LeCun, Yann. "LeNet-5, convolutional neural networks." URL: http://yann. lecun. com/exdb/lenet 20.5 (2015): 14.
 
@@ -124,5 +124,5 @@ This design mainly studies the online face recognition system based on the impro
 
 
 
-[TOC]
+
 

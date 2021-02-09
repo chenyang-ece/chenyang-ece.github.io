@@ -11,16 +11,16 @@ tags:
     - CNN
     - ResNet
 ---
-# Brick Pattern Classification based on ResNet50 
+## Brick Pattern Classification based on ResNet50 
 <b>
 Chen Yang, Hansong Zhou and Jian Zhang  </b><br>
 
-## Abstract 
+### Abstract 
 In this project, a multi-classes image classification system based on deep Residual Network (ResNet50) will be implemented. Besides, to accelerate and optimize the learning efficiency of the residual model, the experiment uses the transfer learning method to introduce the parameters of convolution layers of the pre-training model, which means we only need to train the full connected layer. We also research on the best choice of optimizer and we find that SGD momentum optimizer is more probably to reach global optimum. At last, we have trained a perfect ResNet50 model with 97% accuracy on blind testing set. <br>
 
 Index Terms— Deep Residual Network; Transfer Learning; Image Classification; SGD <br>
 
-## Ⅰ.Introduction 
+### Ⅰ.Introduction 
 
 Image classification has always been one of the most important tasks of computer vision, and with the emergence of deep learning technology, image classification technology has also tended to be improved. In comparison, traditional machine learning methods have many limitations. Common learning models such as Support Vector Machine are all shallow structures[1]. In theory, the three-layer neural network model (input layer, output layer and hidden layers) can approximately classify any function, but if the depth of the model is not enough, the calculation unit required for each layer will increase exponentially. This means that although the shallow model can complete the same classification task, it needs more parameters and training samples than the deep model.
 
@@ -28,7 +28,7 @@ Image classification has always been one of the most important tasks of computer
 
 With the rapid development of hardware equipment, deeper neural network layers become. By improving the original convolutional neural network, people have proposed many powerful new models, such as AlexNet, GoogleNet, ResNet, etc. In our project, we are going to apply Residual Network to brick pattern classification and discuss influence of optimizer and hyperparameter to the convergence and accuracy of neural network model.
 
-## Ⅱ. Model Selection
+### Ⅱ. Model Selection
 
 Our goal is to train a model that can distinguish five different classes of images: Flemish bond, English bond, Stretcher bond, other patterns and not brick.
 
@@ -36,7 +36,7 @@ Residual Network is currently one of the mainstream models of image processing. 
 
 <img src="https://miro.medium.com/max/1140/1*D0F3UitQ2l5Q0Ak-tjEdJg.png">
 
-### A. Structure of ResNet50 Model 
+#### A. Structure of ResNet50 Model 
 The more layers of the network, the more neurons used to extract each level, and the richer the corresponding features that can be extracted. However, if keep increasing the depth of the network, it will cause gradient dispersion or gradient explosion. Although these two can be solved by introducing normalization initialization and intermediate normalization layers, a new problem occurs, network degradation. A specific manifestation of degradation is that as the number of network layers deepens, the accuracy on the training set gradually saturates or even decreases. This problem is not caused by overfitting, so it cannot be avoided through normalization and cross validation.
 
 In response to this problem, the developers of ResNet applied the residual block in the new network. The realization of the residual block is also very intuitive: the original input x passes through a conv-relu-conv combination layer, and an F(x) is output, and then this output and the original output are made a sum, namely H(x) =F(x)+x, as shown in the figure above. Therefore, the only difference between the residual block and the original CNN network is that the original input is superimposed on the convolution output through an identity activation function [2]. This branch is called a shortcut.
@@ -45,15 +45,15 @@ The ResNet50 model used in this experiment is a residual model with a depth of 5
 
 <img src="https://iq.opengenus.org/content/images/2020/03/Screenshot-from-2020-03-20-15-49-54.png">
 
-### B. Application of Transfer Learning
+#### B. Application of Transfer Learning
 Transfer learning is to transfer the parameters of a trained model (pre-trained model on other tasks) to a new model to optimize the training of the new model. Because most of the data and tasks are related, we can transfer the parameters of the pre-training model (which can also be understood as the knowledge learned by the pre-training model) to the new model in some way through migration learning, and then speed up and optimize the learning efficiency of the model.
 
 In this experiment, to accelerate the convergence, we adopted a direct migration method to freeze all the convolutional layers of the original pre-trained model, retain all its parameters, then delete the fully connected layer, and finally add and train this fully-connected layer customized for this task. This experiment needs to train a 5-classes classifier, the original ResNet can recognize 1000 objects. In order to adapt to the data set of this experiment, we replaced the last layer of ResNet and used the input of the original fully connected layer as the input of the new linear layer with 256 output units. Finally, it passes through the ReLu layer and a 256*5 linear layer, and finally outputs a 5-channel softmax. In this way, we can train the specific fully connected layer of this model by directly importing the model parameters of other large-scale data set classification tasks. The advantage of this method is that it can fully retain the image features extracted by the model in other data sets. Such modification of the code can greatly increase the training speed. 
 
-### C. Improved Model 
+#### C. Improved Model 
 Transfer learning is to transfer the parameters of a trained model (pre-trained model on other tasks) to a new model to optimize the training of the new model. Because most of the data and tasks are related, we can transfer the parameters of the pre-training model (which can also be understood as the knowledge learned by the pre-training model) to the new model in some way through migration learning, and then speed up and optimize the learning efficiency of the model.
 
-## Ⅲ. Experiments Design
+### Ⅲ. Experiments Design
 
 In this part, we propose our training strategy, including data preprocessing, optimization algorithm to improve convergence speed, and hyperparameter selection. We also propose solutions to unexpected results that may occur in our test.
 
@@ -68,7 +68,7 @@ When looking for better optimization algorithm, we set a series of typical param
 
 Finally, we will use the test set to test the generalization ability of the model. If the testing accuracy is lower than that of the validation set, or overfitting occurs obviously, we will increase the scale of training set or adjusting the parameters, such as choosing some atypical values or applying other optimization algorithms which can avoid such problems.
 
-### B. Training Flow
+#### B. Training Flow
 
 In this experiment, a complete model training concludes following main steps:
 
@@ -86,13 +86,13 @@ In this experiment, a complete model training concludes following main steps:
 
 -  Save the training record after 30 epochs as .npy file, which includes the loss and the accuracy of each epoch. Then the training is finished.
 
-### C. Testing Flow
+#### C. Testing Flow
 
 After importing the testing set, they need to be preprocessed in the same way to the training set, that is, size transformation and normalization. Besides, the batch size is also 32. We will load the best Residual network model for training and show confusion matrix and accuracy. 
 
 If the test accuracy is much lower than results of validation set, we will re-select the optimizer or use the residual network with shallower network layers, such as ResNet18, because the model with lower complexity is less prone to overfitting.
 
-## Ⅳ. Result and Analysis
+### Ⅳ. Result and Analysis
 
 Experiment 1: Prove the parameters of convolution layers of trained model is effective in the brick pattern classification. 
 
@@ -118,7 +118,7 @@ Experiment 3: Apply our trained ResNet 50 model to the blind testing set with 11
 
 The test result is surprising! The accuracy rate of blind test set is 97.5%, much higher to the verification set. It shows that there is not over-fitting in our model and this ResNet50 model looks perfect.
 
-## Ⅴ. Conclusion
+### Ⅴ. Conclusion
 
 Deeper neural networks may become a trend in the future, and the residual networks makes efficient training of such deep networks possible. Our experiment gives the reasons for the selection of model, optimization algorithm, and parameter, and we obtained a very good model by analyzing and comparing a large number of training results.
 
@@ -128,7 +128,7 @@ Our experiment did not research on the depth of the residual network and the inf
 
 In general, under the application of migration learning and Momentum optimization algorithm, the ResNet50 model can make the network converge to the extreme value with fewer epochs <15, and the correct rate of the verification set is always above 90%. This is a very efficient training method. Our test results are also very satisfactory, with an accuracy rate of 97.5% on the blind test set. We are confident that our model can have good performance in other test sets.
 
-## References
+### References
 
 [1] Y. Yang, J. Wang and Y. Yang, "Improving SVM classifier with prior knowledge in microcalcification detection1," 2012 19th IEEE International Conference on Image Processing, Orlando, FL, 2012, pp. 2837-2840.
 
@@ -140,5 +140,5 @@ In general, under the application of migration learning and Momentum optimizatio
 
 <strong><a href=" https://github.com/chenyang-ece/Brick-Pattern-Classification/tree/e333acd7ab7676e3f67755f49b2e8e73a8d32a2b"> Click here to view code for this project </a></strong>
 
-[TOC]
+
 
