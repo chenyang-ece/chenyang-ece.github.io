@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "「转」微信的诞生史"
+title:      "「转」微信的诞生史，马化腾的灰度法则"
 subtitle:   "The Birth of WeChat and The Gray Law of Pony Ma"
 date:       2020-08-17
 author:     "Chen"
