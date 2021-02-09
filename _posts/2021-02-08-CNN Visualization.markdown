@@ -1,6 +1,6 @@
 ﻿---
 layout:     post
-title:      CNN可视化 | CNN Visualization
+title:      CNN Visualization | 卷积神经网络可视化
 subtitle:   基于Unity的卷积神经网络可视化开发过程
 date:       2021-02-08
 header-img: img/black.jpg
