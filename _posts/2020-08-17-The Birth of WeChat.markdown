@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "「转」微信的诞生"
-subtitle:   "The Birth of WeChat"
+title:      "「转」微信的诞生史"
+subtitle:   "The Birth of WeChat and The Gray Law of Pony Ma"
 date:       2020-08-17
 author:     "Chen"
 header-style: text
