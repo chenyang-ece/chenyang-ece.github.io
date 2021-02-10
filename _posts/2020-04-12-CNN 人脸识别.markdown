@@ -11,7 +11,8 @@ tags:
     - CNN
     - Face Recognition
 ---
-## Face Recognition based on Convolutional Neural Networks
+## Face Recognition based on CNN
+
 <b>
 Chen Yang <br>
 Department of Electrical & Computer Engineering <br>
