@@ -1,5 +1,15 @@
-k
-~~~markdown
+---
+layout:     post
+title:      Markdown教程
+subtitle:   Basic Introduction for Markdown
+date:       2018-08-01
+author:     Chen
+header-img: img/facebook.jpg
+catalog: false
+tags:
+    - Study
+    - Markdown
+---
 
 # Guide
 
@@ -29,7 +39,7 @@ k
 支持表情符号，你可以用系统默认的 Emoji 符号（无法支持 Windows 用户）。
 也可以用图片的表情，输入 `:` 将会出现智能提示。
 
-#### 一些表情例子
+#### 一些表情例子 （Windows不可见）
 
 :smile: :laughing: :dizzy_face: :sob: :cold_sweat: :sweat_smile:  :cry: :triumph: :heart_eyes: :relaxed: :sunglasses: :weary:
 
@@ -133,4 +143,4 @@ func main() {
 留空白的换行，将会被自动转换成一个段落，会有一定的段落间距，便于阅读。
 
 请注意后面 Markdown 源代码的换行留空情况。
-~~~
+        
