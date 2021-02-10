@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Markdown教程
-subtitle:   Basic Introduction for Markdown
+title:      Markdown 教程
+subtitle:  
 date:       2018-08-01
 author:     Chen
 header-img: img/facebook.jpg
