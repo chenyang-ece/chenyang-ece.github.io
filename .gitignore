@@ -1,5 +1,13 @@
 _site
-.sass-cache
+_posts/_draft
+_posts/_archive
+_archive
 node_modules
-Gemfile.lock
-*.gem
+.vscode
+*.log
+*.lock
+*.sh
+.DS_Store
+.jekyll-cache
+*/.DS_Store
+*/*/.DS_Store

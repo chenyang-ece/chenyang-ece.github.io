@@ -1,25 +1,130 @@
-title:              Clean Blog
-email:              a4100yc@outlook.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
-baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+# Site settings
+title: ChenのBlog
+SEOTitle: ChenのBlog | 杨晨的博客
+header-img: img/homepage.jpg
+#email: huxpro@gmail.com
+description: "Chen Yang, University of Florida, https://chenyang-ece.github.io "
+keyword: ""
+url: "https://chenyang-ece.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-# Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  
-linkedin_username:
+# Publish posts or collection documents with a future date.
+future: true
 
-# Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+# SNS settings
+RSS: false
+#weibo_username:     huxpro
+zhihu_username:     yang-guo-qian-11
+github_username:    chenyang-ece
+twitter_username:   Chen25565903
+#facebook_username:  huxpro
+linkedin_username:  chen-yang-a4100yc
+
+
 
 # Build settings
-markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 6
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+
+# Disqus settings
+disqus_username: chennoblog
+
+# Gitalk settings
+
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780
+
+# Google Analytics
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "
+<b>Chen Yang </b> <br>
+  +1 (352) 745 5014 <br>
+  a4100yc@outlook.com <br>
+  Campus Lodge, Apt835,<br>
+  2800 SW Williston Rd,<br>
+  Gainesville, Florida 32608"
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: false
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+
+
+# Friends
+friends: [
+   {
+        title: "University of Florida",              # 要显示的名称
+        href: "http://www.ufl.edu/"   # 好友的博客链接
+    },
+    {
+        title: "UF ECE",              # 要显示的名称
+        href: "https://www.ece.ufl.edu/"    # 好友的博客链接
+    },
+    {
+        title: "辽宁华宇电气",              # 要显示的名称
+        href: "http://www.lnhydq.com/"    # 好友的博客链接
+    },
+    {
+    title: "沈阳工程学院",              # 要显示的名称
+    href: "http://www.sie.edu.cn/"    # 好友的博客链接
+    },
+]
