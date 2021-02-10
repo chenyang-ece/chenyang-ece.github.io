@@ -4,6 +4,7 @@ title:      Markdown教程
 subtitle:   Basic Introduction for Markdown
 date:       2018-08-01
 author:     Chen
+codedemo: true
 header-img: img/facebook.jpg
 catalog: true
 tags:
