@@ -13,7 +13,6 @@ tags:
 
 
 
-~~~markdown
 # Guide
 
 这是一篇讲解如何正确使用 **Markdown** 的排版示例。
@@ -102,7 +101,7 @@ func main() {
 
 ```json
 {"name":"Go语言中文网","url":"https://studygolang.com"}
-``` 
+```
 
 > Tip: 语言名称支持大部分常用的语言
 
@@ -146,7 +145,4 @@ func main() {
 留空白的换行，将会被自动转换成一个段落，会有一定的段落间距，便于阅读。
 
 请注意后面 Markdown 源代码的换行留空情况。
-~~~
-
-
 
