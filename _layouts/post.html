@@ -65,7 +65,7 @@ layout: default
             </div>  
 
     <!-- Side Catalog Container -->
-        {% unless page.no-catalog %}
+        {% if page.catalog %}
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -76,10 +76,14 @@ layout: default
                     <h5>
                         <a class="catalog-toggle" href="#">CATALOG</a>
                     </h5>
+                    <div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span>
+                        <span class="progress-num">0</span><span class="progress-percentage">%</span>
+                        <div class="sidebar-toc__progress-bar" style=""></div>
+                    </div>
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        {% endunless %}
+            {% endif %}
 
     <!-- Sidebar Container -->
             <div class="

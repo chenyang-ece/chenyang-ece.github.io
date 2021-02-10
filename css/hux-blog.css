@@ -56,7 +56,7 @@
   overflow: auto;
   height: 100%;
   padding-bottom: 40px;
-  width: 195px;
+  width: 395px;
 }
 .side-catalog.fixed {
   position: fixed;
@@ -89,7 +89,7 @@
 }
 .side-catalog .catalog-body li a {
   padding-left: 10px;
-  max-width: 180px;
+  max-width: 300px;
   display: inline-block;
   vertical-align: middle;
   height: 30px;
@@ -1693,4 +1693,13 @@ img::-moz-selection {
 }
 .no-scroll {
   overflow-y: hidden;
+}
+
+.sidebar-toc__progress-bar {
+  width: 0;
+  height: 1px;
+  background: #21a675;
+}
+.sidebar-toc__progress {
+  color: #4aad6e !important;
 }
