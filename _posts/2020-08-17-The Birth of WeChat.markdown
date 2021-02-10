@@ -5,7 +5,7 @@ subtitle:   "The Birth of WeChat and The Gray Law of Pony Ma"
 date:       2020-08-17
 author:     "Chen"
 header-style: text
-catalog:    true
+catalog:    false
 tags:
     - 随笔
 ---
