@@ -25,6 +25,10 @@ layout: default
                     {% include multilingual-sel.html %}
                 {% endif %}
 
+                {% if page.codedemo %}
+                    {% include code-demo.html %}
+                {% endif %}
+
 				{{ content }}
 
                 <hr style="visibility: hidden;">
