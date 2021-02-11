@@ -3,12 +3,12 @@ layout:     post
 title:      HTML5总结「2」
 subtitle:   
 date:       2021-02-06
-author:     Chen 
+author:     Chen
 header-img: img/facebook.jpg
 catalog: true
 tags:
     - Study
-	- HTML5
+    - HTML5
 ---
 
 #### 1.Input 类型

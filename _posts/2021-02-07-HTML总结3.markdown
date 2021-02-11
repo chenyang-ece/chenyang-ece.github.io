@@ -3,12 +3,12 @@ layout:     post
 title:      HTML5总结「3」
 subtitle:   
 date:       2021-02-07
-author:     Chen 
+author:     Chen
 header-img: img/facebook.jpg
-catalog: false
+catalog: true
 tags:
     - Study
-	- HTML5
+    - HTML5
 ---
 
 按字母顺序排列的标签列表

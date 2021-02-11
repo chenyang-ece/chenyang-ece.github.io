@@ -3,12 +3,12 @@ layout:     post
 title:      HTML5总结「1」
 subtitle:   
 date:       2021-02-05
-author:     Chen 
+author:     Chen
 header-img: img/facebook.jpg
 catalog: true
 tags:
     - Study
-	- HTML5
+    - HTML5
 ---
 
 ### 1.在 HTML5 中显示视频
