@@ -1,0 +1,49 @@
+---
+layout:     post
+title:      HTML5 总结「1」
+subtitle:   
+date:       2021-02-05
+author:     Chen 
+header-img: img/facebook.jpg
+catalog: true
+tags:
+    - Study
+	- HTML5
+---
+
+### 1.在 HTML5 中显示视频
+
+```html
+<video src="movie.ogg"  width="320" height="240" controls="controls">
+</video>
+controls 属性供添加播放、暂停和音量控件。
+包含宽度和高度属性也是不错的主意。
+
+<video> 与 </video> 之间插入的内容是供不支持 video 元素的浏览器显示的
+
+video 元素允许多个 source 元素。source 元素可以链接不同的视频文件。
+浏览器将使用第一个可识别的格式：
+实例
+<video width="320" height="240" controls="controls">
+  <source src="movie.ogg" type="video/ogg">
+  <source src="movie.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<video> 标签的属性
+属性	          值          	描述
+autoplay	autoplay	如果出现该属性，则视频在就绪后马上播放。
+controls	controls	如果出现该属性，则向用户显示控件，比如播放按钮。
+ loop	    loop	    如果出现该属性，则当媒介文件完成播放后再次开始播放。
+preload   	preload	     如果出现该属性，则视频在页面加载时进行加载，并预备播放。
+                         如果使用 "autoplay",则忽略该属性。
+src	url	要播放的视频的 URL。
+```
+
+### 2.在 HTML5 中播放音频
+
+```html
+<audio src="song.ogg" controls="controls">
+</audio>
+control 属性供添加播放、暂停和音量控件。
+<audio> 与 </audio> 之间插入的内容是供不支持 audio 元素的浏览器显示的：
+```
