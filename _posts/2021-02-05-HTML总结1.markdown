@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      HTML5 总结「1」
+title:      HTML5总结[1]
 subtitle:   
 date:       2021-02-05
 author:     Chen 
