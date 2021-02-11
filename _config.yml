@@ -88,7 +88,7 @@ sidebar-about-description: "
   Campus Lodge, Apt835,<br>
   2800 SW Williston Rd,<br>
   Gainesville, Florida 32608"
-sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/TS.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
