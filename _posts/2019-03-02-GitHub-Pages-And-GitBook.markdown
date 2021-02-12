@@ -7,7 +7,8 @@ author:     Chen
 header-img: img/post-bg-app-Immersive-experience.jpg
 catalog: true
 tags:
-    - Git
+    - Github Pages
+    - GitBook
 ---
 
 > GitHub Pages是GitHub提供的一个网页寄存服务，于2008年推出。
