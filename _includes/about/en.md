@@ -7,7 +7,8 @@
 <p>So I build my blog with <a target="_blank" href="https://pages.github.com/">GitHub Pages</a> and <a target="_blank" href="http://jekyll.com.cn/">Jekyll</a>, and plan to do a good job in the future.</p>
 <p>I will log everything to help you know me better.</p>
 
-    <a href="files/CV.pdf">Click here to view  my CV ←</a></p>
+<p><a href="files/CV.pdf">Click here to view  my CV ←</a> </p>
+
 |        WeChat ↓        |       Homepage ↓       |
 | :--------------------------: | :------------------------: |
 | <img src="/img/QRwechat.jpg" width = "150"> | <img width = "150" src="/img/QRblog.png"> |
