@@ -124,7 +124,14 @@ friends: [
         href: "http://www.lnhydq.com/"    # 好友的博客链接
     },
     {
-    title: "沈阳工程学院",              # 要显示的名称
-    href: "http://www.sie.edu.cn/"    # 好友的博客链接
+    title: "谷歌翻译",              # 要显示的名称
+    href: "https://translate.google.cn/"    # 好友的博客链接
     },
+  {
+    title: "？？？？？？",              # 要显示的名称
+    href: "http://www.sie.edu.cn/"    # 好友的博客链接
+  },{
+    title: "？？？？？？",              # 要显示的名称
+    href: "http://www.sie.edu.cn/"    # 好友的博客链接
+  },
 ]
