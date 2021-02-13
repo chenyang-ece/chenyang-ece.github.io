@@ -94,7 +94,7 @@ sidebar-avatar: /img/TS.jpg      # use absolute URL, seeing it's used in both `/
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
 
@@ -112,19 +112,23 @@ page-mathjax: false
 # Friends
 friends: [
    {
-        title: "University of Florida",              # 要显示的名称
-        href: "http://www.ufl.edu/"   # 好友的博客链接
+        title: "University of Florida",              
+        href: "http://www.ufl.edu/"   
     },
     {
-        title: "UF ECE",              # 要显示的名称
-        href: "https://www.ece.ufl.edu/"    # 好友的博客链接
+        title: "UF ECE",              
+        href: "https://www.ece.ufl.edu/"    
     },
     {
-        title: "辽宁华宇电气",              # 要显示的名称
-        href: "http://www.lnhydq.com/"    # 好友的博客链接
+        title: "辽宁华宇电气",              
+        href: "http://www.lnhydq.com/"    
     },
     {
-    title: "沈阳工程学院",              # 要显示的名称
-    href: "http://www.sie.edu.cn/"    # 好友的博客链接
+    title: "谷歌翻译",              
+    href: "https://translate.google.cn/"  
+    }，
+    {
+        title: "?????",              
+        href: "?????"    
     },
 ]
