@@ -82,7 +82,10 @@ ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "
-<b>Chen, YANG </b> "
+杨晨，目前就读于佛罗里达大学ECE专业<br> <br>
+电话：+1 352 745 5014 <br>
+邮箱：a4100yc@gmail.com <br>
+地址：2800 SW Williston Rd, Gainesville，FL32608"
 sidebar-avatar: /img/TS.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -115,18 +118,7 @@ friends: [
         href: "https://www.ece.ufl.edu/"    # 好友的博客链接
     },
     {
-        title: "辽宁华宇电气",              # 要显示的名称
-        href: "http://www.lnhydq.com/"    # 好友的博客链接
-    },
-    {
     title: "Google Translate",              # 要显示的名称
     href: "https://translate.google.cn/"    # 好友的博客链接
     },
-  {
-    title: "？？？？？？",              # 要显示的名称
-    href: "http://www.sie.edu.cn/"    # 好友的博客链接
-  },{
-    title: "？？？？？？",              # 要显示的名称
-    href: "http://www.sie.edu.cn/"    # 好友的博客链接
-  },
 ]
