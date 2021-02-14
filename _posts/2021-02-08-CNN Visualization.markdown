@@ -52,13 +52,11 @@ The parameters of the three neural networks represented above are all trained di
 
 
 ### Controls
-|Key|Description|
-|---|---|
-|H|Toggle rotation|
-|K|Screenshot|
-|0-9|Switch camera position|
-
-
+| Key  | Description            |
+| ---- | ---------------------- |
+| H    | Toggle rotation        |
+| K    | Screenshot             |
+| 0-9  | Switch camera position |
 
 ### GUI
 
