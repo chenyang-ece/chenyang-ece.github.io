@@ -82,21 +82,8 @@ ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "
-杨晨，目前就读于佛罗里达大学ECE专业<br> <br>
-<table rules="none">
-  <tr>
-    <td>电话:</td>
-    <td> +1 (352) 745 5014</td>
-  </tr>
-  <tr>
-    <td>邮箱:</td>
-    <td> a4100yc@gmail.com</td>
-  </tr>
-  <tr>
-    <td>地址:</td>
-    <td> 2800 SW Williston Rd, Gainesville, Florida, 32608</td>
-  </tr>
-</table>"
+杨晨，目前就读于佛罗里达大学ECE专业<br><br>
+"
 sidebar-avatar: /img/TS.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
