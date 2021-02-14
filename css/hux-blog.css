@@ -131,6 +131,16 @@
 .side-catalog .catalog-body .active a {
   color: #0085a1 !important;
 }
+
+.sidebar-tocprogress-bar {
+  width: 0;
+  height: 1px;
+  background: #21a675;
+}
+.sidebar-tocprogress {
+  color: #4aad6e !important;
+}
+
 @media (max-width: 1200px) {
   .side-catalog {
     display: none;
@@ -654,24 +664,24 @@ pre.highlight {
 body {
   /* Hux learn from
      *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  line-height: 1.7;
-  font-size: 16px;
-  color: #404040;
-  overflow-x: hidden;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+          *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
+               */
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+      color: #404040;
+      overflow-x: hidden;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 }
 p {
-  margin: 30px 0;
+      margin: 30px 0;
 }
 @media screen and (max-width: 768px) {
-  p {
-    margin: 25px 0;
-  }
+      p {
+            margin: 25px 0;
+      }
 }
 h1,
 h2,
@@ -679,109 +689,109 @@ h3,
 h4,
 h5,
 h6 {
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  line-height: 1.7;
-  line-height: 1.1;
-  font-weight: bold;
+      /* Hux learn from
+               *     TypeIsBeautiful,
+                    *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
+                         */
+          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+          line-height: 1.7;
+          line-height: 1.1;
+          font-weight: bold;
 }
 h4 {
-  font-size: 21px;
+          font-size: 21px;
 }
 a {
-  color: #404040;
+          color: #404040;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+          color: #0085a1;
 }
 a img:hover,
 a img:focus {
-  cursor: zoom-in;
+          cursor: zoom-in;
 }
 article {
-  overflow: hidden;
+          overflow: hidden;
 }
 blockquote {
-  color: gray;
-  font-style: italic;
-  font-size: 0.95em;
-  margin: 20px 0 20px;
+          color: gray;
+          font-style: italic;
+          font-size: 0.95em;
+          margin: 20px 0 20px;
 }
 blockquote p {
-  margin: 0;
+          margin: 0;
 }
 small.img-hint {
-  display: block;
-  margin-top: -20px;
-  text-align: center;
+          display: block;
+          margin-top: -20px;
+          text-align: center;
 }
 br + small.img-hint {
-  margin-top: -40px;
+          margin-top: -40px;
 }
 img.shadow {
-  box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+          box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
 }
 select {
-  -webkit-appearance: none;
-  margin-top: 15px;
-  color: #337ab7;
-  border-color: #337ab7;
-  padding: 0em 0.4em;
-  background: white;
+          -webkit-appearance: none;
+          margin-top: 15px;
+          color: #337ab7;
+          border-color: #337ab7;
+          padding: 0em 0.4em;
+          background: white;
 }
 select.sel-lang {
-  min-height: 28px;
-  font-size: 14px;
+          min-height: 28px;
+          font-size: 14px;
 }
 table {
-  margin-top: 10px;
+          margin-top: 10px;
 }
 table.table > tbody th,
 table.table > thead th,
 table.table > tbody td,
 table.table > thead td {
-  border: 1px solid #eee !important;
+          border: 1px solid #eee !important;
 }
 @media screen and (max-width: 767px) {
-  .table-responsive {
-    border: 0;
-  }
+          .table-responsive {
+                    border: 0;
+          }
 }
 hr.small {
-  max-width: 100px;
-  margin: 15px auto;
-  border-width: 4px;
-  border-color: white;
+          max-width: 100px;
+          margin: 15px auto;
+          border-width: 4px;
+          border-color: white;
 }
 pre,
 .table-responsive {
-  -webkit-overflow-scrolling: touch;
+          -webkit-overflow-scrolling: touch;
 }
 pre code {
-  display: block;
-  width: auto;
-  white-space: pre;
-  word-wrap: normal;
+          display: block;
+          width: auto;
+          white-space: pre;
+          word-wrap: normal;
 }
 code,
 kbd,
 pre,
 samp {
-  font-family: "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
+          font-family: "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .postlist-container {
-  margin-bottom: 15px;
+          margin-bottom: 15px;
 }
 .post-container a {
-  color: #337ab7;
+          color: #337ab7;
 }
 .post-container a:hover,
 .post-container a:focus {
-  color: #0085a1;
+          color: #0085a1;
 }
 .post-container h1,
 .post-container h2,
@@ -789,8 +799,8 @@ samp {
 .post-container h4,
 .post-container h5,
 .post-container h6 {
-  margin: 50px 0 20px;
-  line-height: 1.4;
+          margin: 50px 0 20px;
+          line-height: 1.4;
 }
 .post-container h1 + p,
 .post-container h2 + p,
@@ -798,76 +808,76 @@ samp {
 .post-container h4 + p,
 .post-container h5 + p,
 .post-container h6 + p {
-  margin-top: 20px;
+          margin-top: 20px;
 }
 .post-container h2::before {
-  content: " ";
-  display: block;
-  border-bottom: 1px solid #ececec;
-  margin-top: 44px;
-  margin-bottom: 30px;
+          content: " ";
+          display: block;
+          border-bottom: 1px solid #ececec;
+          margin-top: 44px;
+          margin-bottom: 30px;
 }
 .post-container h4 {
-  font-size: 22px;
-  font-weight: 600;
-  color: gray;
+          font-size: 22px;
+          font-weight: 600;
+          color: gray;
 }
 .post-container h4 + p {
-  margin-top: 10px;
+          margin-top: 10px;
 }
 .post-container h5,
 .post-container h6 {
-  font-size: 20px;
-  font-weight: 600;
-  color: gray;
+          font-size: 20px;
+          font-weight: 600;
+          color: gray;
 }
 .post-container h5 + p,
 .post-container h6 + p {
-  margin-top: 10px;
+          margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
-  .post-container h1 {
-    font-size: 30px;
-  }
-  .post-container h2 {
-    font-size: 22px;
-  }
-  .post-container h3 {
-    font-size: 20px;
-  }
-  .post-container h4 {
-    font-size: 19px;
-  }
-  .post-container h5,
-  .post-container h6 {
-    font-size: 18px;
-  }
+          .post-container h1 {
+                    font-size: 30px;
+          }
+          .post-container h2 {
+                    font-size: 22px;
+          }
+          .post-container h3 {
+                    font-size: 20px;
+          }
+          .post-container h4 {
+                    font-size: 19px;
+          }
+          .post-container h5,
+          .post-container h6 {
+                    font-size: 18px;
+          }
 }
 .post-container ul,
 .post-container ol {
-  margin-bottom: 40px;
+          margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
-  .post-container ul,
-  .post-container ol {
-    padding-left: 30px;
-  }
+          .post-container ul,
+          .post-container ol {
+                    padding-left: 30px;
+          }
 }
 @media screen and (max-width: 500px) {
-  .post-container ul,
-  .post-container ol {
-    padding-left: 20px;
-  }
+          .post-container ul,
+          .post-container ol {
+                    padding-left: 20px;
+          }
 }
 .post-container ol ol,
 .post-container ol ul,
 .post-container ul ol,
 .post-container ul ul {
-  margin-bottom: 5px;
+          margin-bottom: 5px;
 }
 .post-container li p {
-  margin: 0;
-  margin-bottom: 5px;
+          margin: 0;
+          margin-bottom: 5px;
 }
 .post-container li h1,
 .post-container li h2,
@@ -875,38 +885,40 @@ samp {
 .post-container li h4,
 .post-container li h5,
 .post-container li h6 {
-  line-height: 2;
-  margin-top: 20px;
+          line-height: 2;
+          margin-top: 20px;
 }
 .post-container .pager li {
-  width: 48%;
+          width: 48%;
 }
 .post-container .pager li.next {
-  float: right;
+          float: right;
 }
 .post-container .pager li.previous {
-  float: left;
+          float: left;
 }
 .post-container .pager li > a {
-  width: 100%;
+          width: 100%;
 }
 .post-container .pager li > a > span {
-  color: #a3a3a3;
-  font-weight: normal;
-  letter-spacing: 0.5px;
+          color: #a3a3a3;
+          font-weight: normal;
+          letter-spacing: 0.5px;
 }
 .post-container .anchorjs-link {
-  position: absolute;
-  text-decoration: none !important;
+          position: absolute;
+          text-decoration: none !important;
 }
 @media only screen and (max-width: 767px) {
-  /**
+          /**
+
    * Layout
    * Since V1.6 we use absolute positioning to prevent to expand container-fluid
    * which would cover tags. A absolute positioning make a new layer.
       */
-    .navbar-default .navbar-collapse {
 
+    .navbar-default .navbar-collapse {
+    
     position: absolute;
     right: 0;
     border: none;
@@ -920,8 +932,9 @@ samp {
    * Animation
    * HuxBlog-Navbar using genuine Material Design Animation
       */
-    #huxblog_navbar {
 
+    #huxblog_navbar {
+    
     /**
      * Sharable code and 'out' function
      */
