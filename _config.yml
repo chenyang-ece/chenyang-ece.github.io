@@ -82,10 +82,10 @@ ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "
-Chen, YANG, M.S. in ECE<br>
+Chen, YANG, M.S. in ECE<br><br>
 +1 (352) 745 5014<br>
 a4100yc@gmail.com<br>
-2800 SW Williston Rd, Gainesville, Florida
+Campus Lodge, Apt835, 2800 SW Williston Rd, Gainesville, Florida 32608
 "
 sidebar-avatar: /img/TS.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
