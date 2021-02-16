@@ -1,7 +1,7 @@
 ---
 title: Archive
 layout: default
-description: keep hungry keep foolish
+description: "「 Time has witnessed my growth 」"
 header-img: "img/tag-bg.jpg"
 ---
 
@@ -31,13 +31,13 @@ https://github.com/kitian616/jekyll-TeXt-theme
 					title="{{ tag[0] }}" rel="{{ tag[1].size }}">
 					{{ tag[0] }}
 					<sup>{{tag[1].size}}</sup>
-				</a>
+				</a>__SEPERATOR__
 				{% endfor %}
 				{% endcapture %}
-        {{ tags | split:'</a>' | sort | join:'</a>' }}
+	    {{ tags | split:'__SEPERATOR__' | sort }}
 			</div>
-
-            <!-- Article List -->
+	
+	        <!-- Article List -->
 			<div class="mini-post-list js-result d-none">
 			{%- assign _sorted_list = site.posts -%}
 			{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
@@ -54,7 +54,7 @@ https://github.com/kitian616/jekyll-TeXt-theme
 						{%- assign _tags = _tags | append: _tag_encode | append: ',' -%}
 					{%- endif -%}
 				{%- endfor -%}
-
+	
 			{% comment %} group by year {% endcomment %}
 			{%- assign _currentdate = _article.date | date: '%Y' -%}
 			{%- if _currentdate != _date -%}
@@ -65,11 +65,11 @@ https://github.com/kitian616/jekyll-TeXt-theme
 				</span>
 				{%- assign _date = _currentdate -%}
 			{%- endif -%}
-
+	
 				<div class="post-preview item" data-tags="{{ _tags }}">
 				    <a href="{{ _article.url | prepend: site.baseurl }}">
 				        <h2 class="post-title">
-                            {{ _article.title }}
+	                        {{ _article.title }}
 				        </h2>
 				        {% if _article.subtitle %}
 				        <h3 class="post-subtitle">
@@ -79,7 +79,9 @@ https://github.com/kitian616/jekyll-TeXt-theme
 				    </a>
 					<hr>
 				</div>
+			{%- if forloop.last -%}</section>{%- endif -%}
 			{% endfor %}
+			</div>
 		</div>
 	</div>
 </div>

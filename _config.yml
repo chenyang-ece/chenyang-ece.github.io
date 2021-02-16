@@ -1,11 +1,11 @@
 # Site settings
-title:  Zeusro Blog
-SEOTitle: Zeusro的博客 | Zeusro Blog
-header-img: img/oYYBAFHlDveICOlTAAWdBpjTP2sAAAvzgB9mBEABZ0e231.jpg
-email: unccav@gmail.com
-description: "none"
-keyword: "Zeusro, Hux Blog"
-url: "Zeusro.github.io"              # your host, for absolute URL
+title: ChenのBlog
+SEOTitle: 杨晨的博客
+header-img: img/homepage.jpg
+email: a4100yc@gmail.com
+description: "Chen Yang, University of Florida, https://chenyang-ece.github.io "
+keyword: ""
+url: "https://chenyang-ece.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,12 +13,12 @@ future: true
 
 # SNS settings
 RSS: false
-#weibo_username:     
-#zhihu_username:     
-github_username:    zeusro
-twitter_username:   M2_49
-#facebook_username:  
-#linkedin_username:  firstname-lastname-idxxxx
+#weibo_username:     huxpro
+zhihu_username:     yang-guo-qian-11
+github_username:    chenyang-ece
+twitter_username:   Chen25565903
+#facebook_username:  huxpro
+linkedin_username:  chen-yang-a4100yc
 
 
 
@@ -26,24 +26,21 @@ twitter_username:   M2_49
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
-paginate: 10
+paginate: 6
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
 
 
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-plugins: 
-- jekyll-paginate
-# - hexo-generator-baidu-sitemap
-# - hexo-generator-sitemap
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
 
-# baidusitemap:
-#     path: baidusitemap.xml
-# sitemap:
-#     path: sitemap.xml
-#     template: ./sitemap_template.xml
+
 
 # Markdown settings
 # replace redcarpet to kramdown,
@@ -57,13 +54,15 @@ kramdown:
       line_numbers: false
     block:
       line_numbers: true
-      start_line: 1                        # use Github Flavored Markdown !important
+      start_line: 1
 
 
 
 # Disqus settings
-#没有账户,先关闭了
-#disqus_username: hux
+disqus_username: chennoblog
+
+# Gitalk settings
+
 
 # Netease settings
 netease_comment: false
@@ -72,19 +71,26 @@ netease_comment: false
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780
 
 # Google Analytics
-
-ga_track_id: 'UA-136502877-1'            # Format: UA-xxxxxx-xx
-ga_domain: www.zeusro.tech
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Valar Morghulis <br> Valar Dohaeris"
-sidebar-avatar: /img/7F55041ECCDC6D8D2DA97A1E9115B2B5_B500_900_500_600.JPEG      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "
+<b>杨 晨</b><br> 
+电子与计算机工程硕士<br>
+佛罗里达大学<br><br>
+
+电话: +1 (352) 745 5014<br>
+邮箱: a4100yc@gmail.com<br>
+地址: 盖恩斯维尔，佛罗里达
+"
+sidebar-avatar: /img/TS.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -96,15 +102,27 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
-service-worker: true
+service-worker: false
+
+
 
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
 
+
+
 # Friends
 friends: [
-  {
-        title: "Google翻译",
-        href: "https://translate.google.cn/"
-    }
+   {
+        title: "University of Florida",              # 要显示的名称
+        href: "http://www.ufl.edu/"   # 好友的博客链接
+    },
+    {
+        title: "UF ECE",              # 要显示的名称
+        href: "https://www.ece.ufl.edu/"    # 好友的博客链接
+    },
+    {
+    title: "Google Translate",              # 要显示的名称
+    href: "https://translate.google.cn/"    # 好友的博客链接
+    },
 ]
