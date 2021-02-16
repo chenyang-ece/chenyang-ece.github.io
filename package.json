@@ -21,8 +21,5 @@
         "dev": "grunt watch & npm run start",
         "boil": "git push boilerplate boilerplate:master",
         "push": "git push origin master --tag"
-    },
-    "dependencies": {
-        "valine": "^1.4.14"
     }
 }
