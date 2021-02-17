@@ -47,10 +47,13 @@ layout: default
                     {% endif %}
                 </ul>
                 <hr style="visibility: hidden;">
+
+                <!-- Valine 评论框 start -->
                 {% if site.valine.enable %}
                       {% include valine_comments.html %}
                 {% endif %}
 	            <!-- Valine 评论框 end -->
+
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
