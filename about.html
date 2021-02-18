@@ -20,11 +20,7 @@ multilingual: true
     {{ about_en | markdownify }}
 </div>
 
-<!-- Valine 评论框 start -->
-{% if site.valine.enable %}
-    {% include valine_comments.html %}
-{% endif %}
-<!-- Valine 评论框 end -->
+
 
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
@@ -34,6 +30,12 @@ multilingual: true
     </div>
 </div>
 <!-- disqus 评论框 end -->
+
+<!-- Valine 评论框 start -->
+{% if site.valine.enable %}
+    {% include valine_comments.html %}
+{% endif %}
+<!-- Valine 评论框 end -->
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
