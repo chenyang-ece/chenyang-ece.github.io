@@ -1,7 +1,7 @@
 ﻿---
 layout:     post
-title:      卷积神经网络可视化
-subtitle:   基于Unity的CNN可视化开发过程
+title:      CNN Visualization | 卷积神经网络可视化
+subtitle:   基于Unity的卷积神经网络可视化开发过程
 date:       2021-02-08
 header-img: img/black.jpg
 author:     Chen
