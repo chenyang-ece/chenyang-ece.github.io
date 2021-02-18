@@ -48,7 +48,23 @@ layout: default
                 </ul>
                 <hr style="visibility: hidden;">
 
-
+                 <!-- 相关文章推荐 开始-->
+	            <div style="border: 1px solid #ddd;">
+	         {% for eachtag in site.tags %}
+	           {% if page.tags.first != eachtag.first %}
+	             {% continue %}
+	           {% endif %}
+	           <h4 align="left">&nbsp;&nbsp;相关文章：</h4>
+	           <ul>
+	          {% for post in eachtag.last offset: 0 limit: 5 %}
+	             <li>
+	               <a href="{{ post.url }}" target="_blank">{{ post.title }} <font color="brown">[{{ post.date | date: "%Y-%m-%d" }}]</font></a>
+	             </li>
+	           {% endfor %}
+	         </ul>
+	         {% endfor %}
+	       </div>
+	              <!-- 相关文章推荐 结束-->
 
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
@@ -58,7 +74,7 @@ layout: default
                 </div>
                 <!-- disqus 评论框 end -->
                 {% endif %}
-                
+
                 <!-- Valine 评论框 start -->
                 {% if site.valine.enable %}
                 <br><br>
