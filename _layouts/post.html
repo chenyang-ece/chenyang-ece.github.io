@@ -52,17 +52,16 @@ layout: default
 
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
+                <h4 align="left">「Disqus用户留言」：</h4>
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
                 </div>
-                <hr>
                 <!-- disqus 评论框 end -->
                 {% endif %}
 
                 <!-- Valine 评论框 start -->
                 {% if site.valine.enable %}
                       {% include valine_comments.html %}
-                <hr>
                 {% endif %}
 	            <!-- Valine 评论框 end -->
 
