@@ -1,7 +1,7 @@
 {
-  "name": "优源博客",
-  "short_name": "优源",
-  "description": "Duter2016 的个人站点",
+  "name": "ChenのBlog",
+  "short_name": "ChenのBlog",
+  "description": "Chen's Personal Website",
   "icons": [{
     "src": "icons/pwa_icon_128.png",
     "sizes": "128x128",
