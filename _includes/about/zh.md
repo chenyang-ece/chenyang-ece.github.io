@@ -11,3 +11,5 @@
 | :--------------------------: | :------------------------: |
 | <img src="/img/QRwechat.jpg" width = "150"> | <img width = "150" src="/img/QRblog.png"> |
 
+<br>
+<br>
