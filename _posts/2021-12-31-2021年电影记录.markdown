@@ -11,7 +11,7 @@ tags:
     - Movies
 ---
 
-<table border="3" cellpadding="10">
+<table border="3">
 <tr>
 <td width="35%"><img src="/img/img for post/2021Movies/信条.webp"></td>
 <td>
