@@ -11,8 +11,6 @@ tags:
     - Movies
 ---
 
-
-
 <table border="2">
 <tr>
 <td width="30%"><img src="/img/img for post/2021Movies/信条.webp"></td>
