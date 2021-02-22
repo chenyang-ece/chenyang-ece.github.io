@@ -7,7 +7,7 @@ author:     Chen
 header-img: img/food.jpg
 catalog: false
 tags:
-    - Life
+    - 生活
 ---
 
 | 沈阳                                  | 打卡 |

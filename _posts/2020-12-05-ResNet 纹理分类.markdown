@@ -9,7 +9,7 @@ catalog: true
 tags:
     - Research
     - CNN
-    - Image Processing
+    - 图像处理
 ---
 ## Brick Pattern Classification based on ResNet50 
 <b>

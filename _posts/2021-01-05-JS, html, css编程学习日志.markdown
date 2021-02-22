@@ -7,7 +7,7 @@ author:     Chen
 header-img: img/facebook.jpg
 catalog: true
 tags:
-    - Study
+    - 学习
 ---
 
 

@@ -7,8 +7,8 @@ author:     Chen
 header-img: img/img for post/2021Movies/2021.png
 catalog: false
 tags:
-    - Life
-    - Movies
+    - 生活
+    - 电影
 ---
 
 <table border="3">

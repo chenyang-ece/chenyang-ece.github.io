@@ -9,7 +9,7 @@ catalog: true
 tags:
     - Research
     - CNN
-    - Face Recognition
+    - 人脸识别
 ---
 ## Face Recognition based on CNN
 
