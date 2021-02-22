@@ -13,7 +13,7 @@ tags:
 
 <table border="2">
 <tr>
-<td width="35%" cellpadding="0"><img src="/img/img for post/2021Movies/信条.webp"></td>
+<td width="35%"><img src="/img/img for post/2021Movies/信条.webp" width="100%" height="100%"></td>
 <td>
     <p><b>信条(TENET)</b></p>
     <p>[美] 克里斯托弗·诺兰| 2020-9-3 </p>
@@ -25,9 +25,10 @@ tags:
 
 
 
+
 <table border="2">
 <tr>
-<td width="35%" cellpadding="0"><img src="/img/img for post/2021Movies/你好李焕英.webp"></td>
+<td width="35%"><img src="/img/img for post/2021Movies/你好李焕英.webp" width="100%" height="100%"></td>
 <td>
     <p><b>你好，李焕英</b></p>
     <p>[中] 贾玲 | 2021-2-12 </p>
