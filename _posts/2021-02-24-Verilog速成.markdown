@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      verilogHDL语言的速成指南
+title:      VerilogHDL语言速成指南
 subtitle:   
 date:       2021-02-24
 author:     Chen
