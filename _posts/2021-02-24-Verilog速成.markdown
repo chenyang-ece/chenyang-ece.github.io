@@ -197,11 +197,11 @@ Verilog HDL不仅提供描述设计的能力，而且提供对激励、控制、
 
 验证与非门交叉连接构成的R S _ F F模块的测试模块如图2 - 8所示。
 
-18
+<img src='/img/img for post/Verilog/18.png'>
 
-19
+<img src='/img/img for post/Verilog/19.png'>
 
-20
+<img src='/img/img for post/Verilog/20.png'>
 
 RS _  FF模块描述了设计的结构。在门实例语句中使用门时延；例如，第一个实例语句中的门时延为1个时间单位。该门时延意味着如果 R或Q b a r假定在T时刻变化，Q将在T+ 1时刻获得计算结果值。
 
@@ -209,4 +209,4 @@ RS _  FF模块描述了设计的结构。在门实例语句中使用门时延；
 
 第二条初始化语句调用系统任务 $m o n i t o r。这一系统任务调用的功能是只要参数表中指定的变量值发生变化就打印指定的字符串。产生的相应波形如图 2 - 9所示。下面是测试模块产生的输出。请注意` t i m e s c a l e指令在时延上的影响。
 
-21
+<img src='/img/img for post/Verilog/21.png'>
