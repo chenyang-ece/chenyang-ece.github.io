@@ -9,6 +9,7 @@ catalog: true
 tags:
     - 学习
     - Verilog HDL
+    - 编程语言
 ---
 
 ### 1.1 模块
