@@ -95,12 +95,11 @@ ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "
 <b>杨 晨</b><br> 
-电子与计算机工程硕士<br>
-佛罗里达大学<br><br>
+<br>
 
-电话: +1 (352) 745 5014<br>
-邮箱: a4100yc@gmail.com<br>
-地址: 盖恩斯维尔，佛罗里达
+电话: 86 15004103560<br>
+邮箱: a4100yc@outlook.com<br>
+地址: 辽宁省铁岭市银州区
 "
 sidebar-avatar: /img/TS.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
@@ -108,7 +107,7 @@ sidebar-avatar: /img/TS.jpg      # use absolute URL, seeing it's used in both `/
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
 
 
 
