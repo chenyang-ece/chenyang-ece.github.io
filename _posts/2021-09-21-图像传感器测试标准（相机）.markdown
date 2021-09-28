@@ -11,7 +11,7 @@ tags:
     - 相机测试
 ---
 
-<p><a href="files/EMVA1288-3.1rc-20171025.pdf" target="blank">EMVA1288-3.1rc-20171025（中文版）</a></p>
+<p><a href="/about/files/EMVA1288-3.1rc-20171025.pdf" target="blank">EMVA1288-3.1rc-20171025（中文版）</a></p>
 
 <p><a href="files/EMVA1288General_4.0Release.pdf" target="blank">EMVA1288General_4.0Release（English Version）</a></p>
 
