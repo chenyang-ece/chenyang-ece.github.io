@@ -63,7 +63,7 @@ disqus_username: chennoblog
 
 # Valine评论系统开关
 valine:
-  enable: true
+  enable: false
   appid:  3gPpwWIXhcu1G22P8G124dj7-gzGzoHsz
   appkey: 0w2FfOdcxY4PSyMyRgVz6mAy
   placeholder: 请在此处留言！昵称填QQ号自动获取QQ头像及昵称！  # comment box placeholder
