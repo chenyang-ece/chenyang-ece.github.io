@@ -63,7 +63,7 @@ disqus_username: chennoblog
 
 # Valine评论系统开关
 valine:
-  enable: false
+  enable: true
   appid:  3gPpwWIXhcu1G22P8G124dj7-gzGzoHsz
   appkey: 0w2FfOdcxY4PSyMyRgVz6mAy
   placeholder: 请在此处留言！昵称填QQ号自动获取QQ头像及昵称！  # comment box placeholder
@@ -94,7 +94,7 @@ ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "
-<b>杨 晨</b><br>
+<b>呜啦啦啦火车笛</b><br>
 小米科技-图像传感器工程师
 <br>
 
