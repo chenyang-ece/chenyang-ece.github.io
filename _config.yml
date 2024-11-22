@@ -1,5 +1,5 @@
 # Site settings
-title: ChenのBlog
+title: YANG Chen's Blog
 SEOTitle: 杨晨的博客
 header-img: img/bg-index.jpg
 email: a4100yc@gmail.com
@@ -94,8 +94,8 @@ ba_track_id: 3b260a0f1b96afd8ce63e6ea547b9780
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "
-<b>呜啦啦啦火车笛</b><br>
-小米科技-图像传感器工程师
+<b>Thomas YANG</b><br>
+三星半导体（中国）研究院-技术项目经理
 <br>
 
 电话: 86 15004103560<br>
@@ -125,6 +125,11 @@ page-mathjax: false
 
 # Friends
 friends: [
+  {
+    title: "Samsung Semiconductor",              # 要显示的名称
+    href: "https://semiconductor.samsung.com/cn/"   # 好友的博客链接
+   },
+
    {
     title: "Xiaomi Tech",              # 要显示的名称
     href: "https://www.mi.com/"   # 好友的博客链接
