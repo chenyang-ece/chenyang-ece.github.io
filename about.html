@@ -12,15 +12,7 @@ multilingual: true
 <div class="zh post-container">
     {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
-</div>
-
-<!-- English Version -->
-<div class="en post-container">
-    {% capture about_en %}{% include about/en.md %}{% endcapture %}
-    {{ about_en | markdownify }}
-</div>
-
-<h3>更新记录：</h3>
+    <h3>更新记录：</h3>
 <div style="background-color:#e8e6e1;
                           border-radius: 10px 10px 10px 10px;
                           -moz-border-radius: 10px 10px 10px 10px;
@@ -29,6 +21,15 @@ multilingual: true
                           padding:1px 8px 1px 8px;"">
 {% include timeline.html %}
 </div>
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>
+
+
 
 <br> <br>
 <!-- Valine 评论框 start -->
