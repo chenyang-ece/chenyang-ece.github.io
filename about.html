@@ -13,13 +13,7 @@ multilingual: true
     {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
     <h3>更新记录：</h3>
-<div style="background-color:#e8e6e1;
-                          border-radius: 10px 10px 10px 10px;
-                          -moz-border-radius: 10px 10px 10px 10px;
-                          -webkit-border-radius: 10px 10px 10px 10px;
-                          border: 0px solid #000000;
-                          padding:1px 8px 1px 8px;"">
-{% include timeline.html %}
+    {% include timeline.html %}
 </div>
 </div>
 
