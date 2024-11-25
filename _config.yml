@@ -64,7 +64,7 @@ disqus_username: chennoblog
 # Valine评论系统开关
 valine:
   enable: true
-  appid:  3gPpwWIXhcu1G22P8G124dj7-gzGzoHsz
+  appid:  VmpLpTiqzpCm5yEkLXHufbpIDEfAIzl2w7EPAzi5KYZRjHEjjP9OLgCvtI4uOPm3-cn-n1
   appkey: 0w2FfOdcxY4PSyMyRgVz6mAy
   placeholder: 请在此处留言！昵称填QQ号自动获取QQ头像及昵称！  # comment box placeholder
   avatar: ''   # gravatar style
@@ -74,7 +74,7 @@ valine:
   recordIP: true # 是否记录评论者IP
   enableQQ: true # 是否启用昵称框自动获取QQ昵称和QQ头像, 默认关闭
   avatar_cdn: https://sdn.geekzu.org/avatar/    # gravatar头像镜像
-  serverURLs: https://3gPpwWIX.api.lncldglobal.com # 把前8位字符替换成你自己AppID的前8位字符，leancloud国际版添加该参数，国内版无需
+  serverURLs: https://VmpLpTiq.api.lncldglobal.com # 把前8位字符替换成你自己AppID的前8位字符，leancloud国际版添加该参数，国内版无需
 
 
 # Netease settings
