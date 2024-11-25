@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      电影记录 
+title:      15-463, 15-663, 15-862 Computational Photography, Fall 2019 
 subtitle:   
 date:       2024-11-25
 author:     Chen
