@@ -1,10 +1,26 @@
+
 ---
-title: Talks
-layout: default
-permalink: /talks/
-description: 乐享每一天，快乐永相伴
+layout: page
+title: "Talks"
+description: "「 乐享每一天，快乐永相伴 」"
 header-img: "img/bg-about.jpg"
+multilingual: true
 ---
+
+{% include multilingual-sel.html %}
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>
+
 
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
