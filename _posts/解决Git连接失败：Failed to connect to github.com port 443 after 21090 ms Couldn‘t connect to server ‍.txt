@@ -1,0 +1,15 @@
+---
+layout:     post
+title:      解决Git连接失败：Failed to connect to github.com port 443 after 21090 ms Couldn‘t connect to server ‍
+subtitle:   
+date:       2024-11-26
+author:     Chen
+header-img: img/facebook.jpg
+catalog: false
+tags:
+    - 学习
+
+---
+
+
+ [https://cloud.tencent.com/developer/article/2405656/](https://cloud.tencent.com/developer/article/2405656//) 
